@@ -10,6 +10,7 @@
 		35594FE9F140E373361F412E /* Pods_SwiftHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E2F1B93BD3516DC94B7340 /* Pods_SwiftHelper.framework */; };
 		EE45D73B2175CB8A00CB4C87 /* SwiftHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = EE45D7392175CB8A00CB4C87 /* SwiftHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE45D7422175CBAB00CB4C87 /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE45D7412175CBAB00CB4C87 /* TestClass.swift */; };
+		EE45D7442175D63F00CB4C87 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE45D73A2175CB8A00CB4C87 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -149,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE45D7442175D63F00CB4C87 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
