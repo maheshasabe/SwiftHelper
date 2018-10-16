@@ -8,9 +8,9 @@
 
 import UIKit
 
-class TestClass: NSObject {
+public class TestClass: NSObject {
 
-    func whatsTheName() -> String {
+    public func whatsTheName() -> String {
         return "SwiftHelper TestClass"
     }
 }
