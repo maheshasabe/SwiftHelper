@@ -1,0 +1,16 @@
+PODS:
+  - SwiftHelper (1.0.5)
+
+DEPENDENCIES:
+  - SwiftHelper (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftHelper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftHelper: e2323720a66ca419ab90eddac6ef848e0347b23d
+
+PODFILE CHECKSUM: ddd7eb433260a0c8cb1116b6643e041523e48dd4
+
+COCOAPODS: 1.5.3
