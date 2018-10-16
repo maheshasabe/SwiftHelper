@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35594FE9F140E373361F412E /* Pods_SwiftHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E2F1B93BD3516DC94B7340 /* Pods_SwiftHelper.framework */; };
 		EE45D73B2175CB8A00CB4C87 /* SwiftHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = EE45D7392175CB8A00CB4C87 /* SwiftHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE45D7422175CBAB00CB4C87 /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE45D7412175CBAB00CB4C87 /* TestClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		015351640544EAD51878F18D /* Pods-SwiftHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftHelper/Pods-SwiftHelper.release.xcconfig"; sourceTree = "<group>"; };
+		C5E2F1B93BD3516DC94B7340 /* Pods_SwiftHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92C79BCB781BE8439A385F9 /* Pods-SwiftHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftHelper/Pods-SwiftHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		EE45D7362175CB8A00CB4C87 /* SwiftHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE45D7392175CB8A00CB4C87 /* SwiftHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftHelper.h; sourceTree = "<group>"; };
 		EE45D73A2175CB8A00CB4C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -23,17 +27,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35594FE9F140E373361F412E /* Pods_SwiftHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90DC934911ECDDF854817AE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5E2F1B93BD3516DC94B7340 /* Pods_SwiftHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8A9B5F3B580DA6492A05689 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E92C79BCB781BE8439A385F9 /* Pods-SwiftHelper.debug.xcconfig */,
+				015351640544EAD51878F18D /* Pods-SwiftHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EE45D72C2175CB8A00CB4C87 = {
 			isa = PBXGroup;
 			children = (
 				EE45D7382175CB8A00CB4C87 /* SwiftHelper */,
 				EE45D7372175CB8A00CB4C87 /* Products */,
+				D8A9B5F3B580DA6492A05689 /* Pods */,
+				90DC934911ECDDF854817AE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE45D73E2175CB8A00CB4C87 /* Build configuration list for PBXNativeTarget "SwiftHelper" */;
 			buildPhases = (
+				BC307D99509418E329AD42DA /* [CP] Check Pods Manifest.lock */,
 				EE45D7312175CB8A00CB4C87 /* Headers */,
 				EE45D7322175CB8A00CB4C87 /* Sources */,
 				EE45D7332175CB8A00CB4C87 /* Frameworks */,
@@ -128,6 +153,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC307D99509418E329AD42DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftHelper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE45D7322175CB8A00CB4C87 /* Sources */ = {
@@ -265,6 +311,7 @@
 		};
 		EE45D73F2175CB8A00CB4C87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92C79BCB781BE8439A385F9 /* Pods-SwiftHelper.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -275,6 +322,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,6 +339,7 @@
 		};
 		EE45D7402175CB8A00CB4C87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015351640544EAD51878F18D /* Pods-SwiftHelper.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -301,6 +350,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftHelper/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
